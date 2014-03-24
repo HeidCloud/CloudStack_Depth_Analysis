@@ -22,3 +22,5 @@ Fuse http://fuse.sourceforge.net/
 
 #系统路由
 
+#vpc
+  通过域来实现资源的隔离，操作顺序是:先建立多个域，然后再创建用户的时候，选择不同的域。使之用户级别不同（admin/user）
