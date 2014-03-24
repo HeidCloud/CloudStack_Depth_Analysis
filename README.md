@@ -24,3 +24,8 @@ Fuse http://fuse.sourceforge.net/
 
 #vpc
   通过域来实现资源的隔离，操作顺序是:先建立多个域，然后再创建用户的时候，选择不同的域。使之用户级别不同（admin/user）
+  
+#高可用
+  1.全局变量 ha.tag
+  2.计算方案，ha标签
+  3.主机ha 标签
