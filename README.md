@@ -4,7 +4,14 @@ CloudStack深度剖析
 #存储
 - Fuse http://fuse.sourceforge.net/
 - 主存储无法删除解决方法:到数据库找volumes表，找到相关volume 处于expunging 状态，表示已经删除，但remove字段是NULL，说明有问题，在删除后，removed应该有删除的时间，而不是为null.
-
+```
+mysql>use cloud;
+mysql>update storage_pool set removed=now() where pod_id=5;
+mysql>update volumes set removed=now() where pod_id=5;
+```
+4.3版本已经解决此bug   
+https://issues.apache.org/jira/browse/CLOUDSTACK-4697   
+https://issues.apache.org/jira/browse/CLOUDSTACK-4402   
 #网络
 
 #模板
