@@ -15,6 +15,48 @@ https://issues.apache.org/jira/browse/CLOUDSTACK-4402
 #网络
 
 #模板
+  http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/installation.html#management-server-installation
+  
+   Looks like the template names are wrong.
+  
+     - For Hyper-V
+  
+  # /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt
+  -m /mnt/secondary -u
+  http://download.cloud.com/templates/4.3/systemvm64template-2013-12-23-hyperv.vhd.bz2
+  -h hyperv -s <optional-management-server-secret-key> -F
+  
+  
+     - For XenServer:
+  
+  # /usr/lib64/cloud/common/scripts/storage/secondary/cloud-install-sys-tmplt
+  -m /mnt/secondary -u
+  http://download.cloud.com/templates/acton/acton-systemvm-02062012.vhd.bz2
+  -h xenserver -s <optional-management-server-secret-key> -F
+  
+  
+     - For vSphere:
+  
+  # /usr/lib64/cloud/common/scripts/storage/secondary/cloud-install-sys-tmplt
+  -m /mnt/secondary -u
+  http://download.cloud.com/templates/burbank/burbank-systemvm-08012012.ova
+  -h vmware -s <optional-management-server-secret-key>  -F
+  
+  
+     - For KVM:
+  
+  # /usr/lib64/cloud/common/scripts/storage/secondary/cloud-install-sys-tmplt
+  -m /mnt/secondary -u
+  http://download.cloud.com/templates/acton/acton-systemvm-02062012.qcow2.bz2
+  -h kvm -s <optional-management-server-secret-key> -F
+  
+  
+     - For LXC:
+  
+  # /usr/lib64/cloud/common/scripts/storage/secondary/cloud-install-sys-tmplt
+  -m /mnt/secondary -u
+  http://download.cloud.com/templates/acton/acton-systemvm-02062012.qcow2.bz2
+  -h lxc -s <optional-management-server-secret-key> -F
 
 #区域
 
