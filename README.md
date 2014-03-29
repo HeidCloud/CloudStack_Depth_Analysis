@@ -80,7 +80,8 @@ https://issues.apache.org/jira/browse/CLOUDSTACK-4402
   2.计算方案，ha标签
   3.主机ha 标签
 ##数据库
-- 数据中心表：
-- 提供点表：host_pod_ref表 与 data_center表
-- 集群表：
-- 主机表：
+###cloudstack4.2.1
+- 数据中心表：data_center表
+- 提供点表：host_pod_ref表 
+- 集群表：cluster表
+- 主机表：host表
