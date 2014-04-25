@@ -60,14 +60,23 @@ https://issues.apache.org/jira/browse/CLOUDSTACK-4402
 
 ##区域
   清理一个区域的步骤，SQL
-  mysql> delete from volumes; 
-  mysql> delete from storage_pool; 
+  
+  mysql> delete from volumes;
+  
+  mysql> delete from storage_pool;    
+  
   mysql> delete from dc_storage_network_ip_range; 
+  
   mysql> delete from nics; 
+  
   mysql> select * from cluster; 
+  
   mysql> delete from host_pod_ref; 
+  
   mysql>delete from image_store; 
+  
   mysql> delete from vm_instance ; 
+  
   mysql> delete from data_center; 
 
 ##提供点
